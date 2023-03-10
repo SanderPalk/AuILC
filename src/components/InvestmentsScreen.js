@@ -1,6 +1,7 @@
 import "./InvestmentScreen.css"
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import axios from "axios";
+
 
 function InvestmentsScreen() {
     const [searchKey, setSearchKey] = useState("")
@@ -8,10 +9,11 @@ function InvestmentsScreen() {
     const [user, setUser] = useState(null)
     const [investments, setInvestments] = useState([])
 
-    const api = process.env.API_URI || 'http://localhost:4000'
+    const api = process.env.REACT_APP_BASE_URL
 
     const handleChange = (event) => {
         setSearchKey(event.target.value)
+        console.log(api)
     }
 
     const getUser = () => {
