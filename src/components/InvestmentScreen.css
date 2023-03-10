@@ -1,0 +1,70 @@
+/* INPUT SECTION */
+.investment-screen {
+    padding-top: 3%;
+}
+
+.investment-input {
+    height: 200px;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 2em;
+    color: #fff8ef;
+    text-shadow: #9a7e5e 1px 1px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #fff8ef;
+
+}
+
+.investment-search {
+    all: unset;
+    background-color: #d2a97f;
+    width: 200px;
+    height: 50px;
+    border: #9a7e5e 1px solid;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: rgba(77, 60, 47, 0.82);
+}
+
+.submit-button {
+    all: unset;
+    height: 50px;
+    width: 100px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: #9a7e5e;
+    background-color: #9a7e5e;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: antiquewhite;
+}
+
+/* DATA SECTION */
+.investment-information {
+    height: 650px;
+}
+
+table {
+    margin: 0 auto;
+    width: 95%;
+    color: #fff8ef;
+    border-collapse: collapse;
+    background-color: rgba(77, 60, 47, 0.82);
+    border-radius: 5px;
+}
+
+thead {
+    font-size: 1.25em;
+    height: 50px;
+}
+
+th {
+    border-top: #9a7e5e 1px solid;
+}

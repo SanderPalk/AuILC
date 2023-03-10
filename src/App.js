@@ -49,6 +49,11 @@ function App() {
                     <InvestmentsScreen/>
                 </section>
             )}
+            <footer>
+                <div className="footer-content">
+                    <p className="footer">&copy; 2023 Aurum Investment LC. All rights reserved.</p>
+                </div>
+            </footer>
         </div>
     );
 }

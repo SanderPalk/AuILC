@@ -28,15 +28,15 @@ function HomeScreen() {
             <h3>Team members</h3>
             <div className="team">
                 <div className="team-member">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"/>
+                    <img alt=' ' src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"/>
                     <p className="team-description">
-                        Michael Wright<br/>Phone: 55555555<br/><a href="#">Facebrowser</a>
+                        Michael Wright<br/>Phone: 55555555<br/><a href="https://face.gta.world/">Facebrowser</a>
                     </p>
                 </div>
                 <div className="team-member">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"/>
+                    <img alt=' ' src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"/>
                     <p className="team-description">
-                        Andrei Sadovsky<br/>Phone: 55555555<br/><a href="#">Facebrowser</a>
+                        Andrei Sadovsky<br/>Phone: 55555555<br/><a href="https://face.gta.world/">Facebrowser</a>
                     </p>
                 </div>
             </div>
@@ -104,7 +104,7 @@ function HomeScreen() {
             </p>
             <p className="contact-list">
                 <h3>Contact us by</h3>
-                <a href="#">Facebrowser</a><br/>
+                <a href="https://face.gta.world/">Facebrowser</a><br/>
                 Michael's phone: 5555555<br/>
                 Andrei's phone: 5555555
 
