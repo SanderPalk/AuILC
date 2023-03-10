@@ -6,6 +6,7 @@ html {
   text-align: center;
   width: 1200px;
   margin: 0 auto;
+  font-family: Helvetica, serif;
 }
 
 /* HEADER SECTION */
@@ -58,16 +59,16 @@ nav {
   height: 50px;
 }
 
-nav a {
-  text-decoration: none;
+button.nav-box {
+  all: unset;
+  cursor: pointer;
+  border-right: antiquewhite 1px solid;
   color: antiquewhite;
   font-weight: bolder;
   font-size: 1.2em;
   width: 150px;
-  margin-top: 1%;
 }
 
-.nav-box {
-  height: max-content;
-  border-right: antiquewhite 1px solid;
+.nav-box.active {
+  background-color: #9a7e5e;
 }
