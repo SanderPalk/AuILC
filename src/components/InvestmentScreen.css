@@ -53,11 +53,12 @@ h3 {
 
 table {
     margin: 0 auto;
-    width: 95%;
+    width: 120%;
     color: #fff8ef;
     border-collapse: collapse;
     background-color: rgba(77, 60, 47, 0.82);
     border-radius: 5px;
+    margin-left: -10%;
 }
 
 thead {

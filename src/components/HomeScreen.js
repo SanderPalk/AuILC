@@ -102,8 +102,8 @@ function HomeScreen() {
                 investment professionals is ready to assist you with any questions you may have. Let Aurum
                 Investments LC be your partner in building a brighter financial future.
             </p>
+            <h3>Contact us by</h3>
             <p className="contact-list">
-                <h3>Contact us by</h3>
                 <a href="https://face.gta.world/">Facebrowser</a><br/>
                 Michael's phone: 5555555<br/>
                 Andrei's phone: 5555555
