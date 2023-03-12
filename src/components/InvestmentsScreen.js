@@ -13,7 +13,6 @@ function InvestmentsScreen() {
 
     const handleChange = (event) => {
         setSearchKey(event.target.value)
-        console.log(api)
     }
 
     const getUser = () => {
@@ -40,9 +39,7 @@ function InvestmentsScreen() {
     const handleSearchButton = async () => {
         setSearched(true)
         await getUser()
-        if (user) {
-            await getInvestments()
-        }
+        await getInvestments()
     }
 
     const handleSearchText = async (event) => {

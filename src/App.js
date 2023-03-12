@@ -3,6 +3,7 @@ import StockLoop from "./components/StockLoop.js";
 import InvestmentsScreen from "./components/InvestmentsScreen";
 import {useState} from "react";
 import HomeScreen from "./components/HomeScreen";
+import AdminPanel from "./components/Admin";
 
 function App() {
     const [activeSection, setActiveSection] = useState('home')
@@ -14,6 +15,10 @@ function App() {
     const handlePortfolioClick = () => {
         setActiveSection('portfolio');
     };
+
+    function handleNavClick(section) {
+        setActiveSection(section)
+    }
 
 
     return (
@@ -29,11 +34,17 @@ function App() {
                     </div>
                 </div>
                 <nav>
-                    <button onClick={handleHomeClick}
-                            className={`nav-box ${activeSection === 'home' ? 'active' : ''}`}>Home
+                    <button onClick={() => handleNavClick('home')}
+                            className={`nav-box ${activeSection === 'home' ? 'active' : ''}`}>
+                        Home
                     </button>
-                    <button onClick={handlePortfolioClick}
-                            className={`nav-box ${activeSection === 'portfolio' ? 'active' : ''}`}>My Portfolio
+                    <button onClick={() => handleNavClick('portfolio')}
+                            className={`nav-box ${activeSection === 'portfolio' ? 'active' : ''}`}>
+                        My Portfolio
+                    </button>
+                    <button onClick={() => handleNavClick('admin')}
+                            className={`nav-box ${activeSection === 'admin' ? 'active' : ''}`}>
+                        Admin
                     </button>
                 </nav>
                 <StockLoop/>
@@ -49,6 +60,12 @@ function App() {
                     <InvestmentsScreen/>
                 </section>
             )}
+
+            {activeSection === 'admin' && (
+                <section className="admin">
+                    <AdminPanel/>
+                </section>
+                )}
             <footer>
                 <div className="footer-content">
                     <p className="footer">&copy; 2023 Aurum Investment LC. All rights reserved.</p>
