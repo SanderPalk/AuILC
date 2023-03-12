@@ -1,6 +1,13 @@
 /* ADMIN PANEK */
 .admin-panel {
-    height: 600px;
+    height: 1100px;
+}
+
+/* AUTHORIZATION */
+
+h1 {
+    color: #fff8ef;
+    font-size: 3em;
 }
 
 .admin-key {
@@ -10,4 +17,99 @@
     height: 50px;
     border: #9a7e5e 1px solid;
     border-radius: 5px;
+}
+
+p.validation-error {
+    color: #dc1414;
+    font-size: 1.25em;
+}
+
+
+/* PANEL */
+
+.panel {
+}
+
+.upper-nav {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 90%;
+    font-size: 2em;
+    color: #fff8ef;
+}
+
+.user-section, .investment-section {
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.user-section {
+    border-right: #9a7e5e 1px solid;
+}
+
+.lower-nav {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    background-color: #9a7e5e;
+    color: #fff8ef;
+}
+
+.lower-section {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lower-section button {
+    all: unset;
+    cursor: pointer;
+    height: 30px;
+}
+
+.lower-section button.active {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#user-options {
+    border-right: rgba(0, 0, 0, 0.75) 1px solid;
+}
+
+
+/* PANEL CONTENT */
+.form {
+
+}
+
+.form, .form form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    color: #fff8ef;
+    font-weight: bolder;
+    font-size: 1.25em;
+}
+
+.form input {
+    all: unset;
+    background-color: #d2a97f;
+    width: 200px;
+    height: 30px;
+    border: #9a7e5e 1px solid;
+    border-radius: 5px;
+    margin: 0 auto 1%;
+    color: black;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+table {
+    margin: 0 auto;
+    width: 100%;
 }

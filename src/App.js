@@ -8,14 +8,6 @@ import AdminPanel from "./components/Admin";
 function App() {
     const [activeSection, setActiveSection] = useState('home')
 
-    const handleHomeClick = () => {
-        setActiveSection('home');
-    };
-
-    const handlePortfolioClick = () => {
-        setActiveSection('portfolio');
-    };
-
     function handleNavClick(section) {
         setActiveSection(section)
     }
